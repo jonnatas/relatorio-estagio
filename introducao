@@ -1,0 +1,62 @@
+\chapter{Introdução}
+Este relátorio descreve as esperiencias, no decorrer do estágio obrigatório e supervisionado, realizado pelo aluno Jônnatas Lennon Lima Costa da Universidade de Brasília - Faculdade do Gama (FGA), no curso de Engenharia de Software. Tal estágio realizado no Tribunal de Contadas da Uniãp (TCU), ná área de engenharia de spftware, no setor SESOL-3. Este relátorio descreve a estrutura do TCU, bem como a forma de trabalho realizada e demais experiencias realizadas ao longo do eságio.
+
+\chapter{Descrição da Intiruição}
+O TCU, é o orgão de controle externo do governo federal, e auxilia o congresso nacional, na fiscalização relacionada as questões orçamentárias envolvendo toda a administração pública do Brasil \cite{comp_TCU}. Sendo que, o TCU é o responsável legal pela fiscalização contábil, financeira, orçamentária, operacional e patrimonial dos orgãos da administração pública. Foi criado na constituição de 1891, possuindo as suas atribuições especificadas em lei.
+
+O TCU localiza-se no St. de Administração Federal Sul - Asa Sul, Brasília - DF
+Dentre as competencias do TCU, destacam-se:
+\item Apreciar as contas da presidencia da República;
+\item Apreciar a legalidade dos atos de admissão de pessoal e de concessão de aposentadorias, reformas e pensões civis e militares;
+\item Realizar auditorias;
+\item Fiscalizar a utilização dos recursos da União;
+\item Aplicar sanções em iregularidades em atos e contratos.
+
+Relacionado a área de Tecnologia da Informação, o TCU trabalha com o conceito de desenvolviemnto descetralizado, ou seja cada setor da empresa é independente em relação ao processo de trabalho, entregas, métodoglogia, tecnologias utilizadas etc. Deste modo cada setor trabalha com ampla autonomia relacionado a TI.
+
+O estágio foi realizado no SESOL-3, pertecente a STI/Ditex, um dos setores de TI do tribunal. Atualmente o SESOL-3 possue três projetos sobre o seu portifolio de desenvolviemnto o E-pessoal, E-TCU administração publica e o Alertas TCU. Os softwares desenvolvidos no Ditex possuem como foco, usar tecnologia da informação para revolucionar o controle externo no Brasil, com clara percepção social.
+
+\chapter{Atividade desenvolvidas e cronograma de execução}
+Com relação ao cronograma de execução, o SESOL-3 utiliza a métodologia de desenvolvidas Ágil, com a utilização de um Kambam através do Trelo. Ou sejá não existe no SESOL-3 a existência de um cronograma para a execução das ativides relacionadas ao desenvolviemnto, existindo o cronograma para as macro atividades, definidas no Plano Diretor de Tecnologia da Informação PDTI. Com relação ao Kambam, existe o Backlog do produto o qual é definido pelo PO e pela equipe de Requisitos do SESOL-3. Esse Backlog é separado em:
+Backlog do Produto - Menos necessário;
+Backlog do Produto - Mais necessário;
+Requisitos em validação;
+Estórias da Release;
+Backlog da Sprint;
+Bloqueados;
+Bugs;
+Bugs;
+Fazendo;
+Aguardando publicação para teste;
+Teste - não iniciados;
+Testes - Fazendo;
+Validação PO;
+Homologados;
+Aguardando publicação;
+Em produção;
+Atualizar documentação;
+
+Deste modo as atividades alocadas aos estágiarios, servidores e teceirizados, são definidas por sprints semanais, com a realização de reuniões diárias de 15 minutos para a verificação do trabalho realizado.
+
+Neste contexto, ao longo do estágio trabalhei nos três projetos em desenvolvimento no SESOL-3, o Alertas, E-pessoal e ETCU-Administração-publica.
+\section{Alertas}
+Alertas é um sistema em java, orientado a microserviços, que realiza notificações relacionadas as atividades do TCU, para os funcionários do Tribunal, como o envio de alerta relacionadas a um processo atrasada para analise de um auditor fiscal. Neste projeto trabalhei, com a criação de um Push-notification, para funcionar no navegador do usuário. Esse sistema funciona da seguinte maneira, ao entrar na pagina institucional do TCU é gerada uma notificação para o usuário, pedindo para o mesmo se inscrever no sistema, e o mesmo envia uma notificação para o usuário, sempre que necessário.
+
+Neste sistema, foram realizadas duas sprints em pareamento com outro estágiario do SESOL-3. A funcionalidade acabou indo para a aba de Bloqueados no Kambam, devido ao Proxy do TCU bloquea-la por motivos de regulamentação interna do setor responsável pelo trafego de rede no TCU.
+
+\section{E-pessoal}
+Principal sistema desenvolvido pelo SESOL-3, este sistema tem como objetivo gerenciar todos os atos de pessoal da adminstração publica, sejam eles de admissão, aposentadoria, pensão etc. Este sistema é orientado a microserviços, desenvolvido em Java, possuindo diversas funcionalidades relacionadas ao atos de pessoal, dentre elas as \textbf{Criticas}.
+
+As criticas, são funcionalidades do e-pessoal responsaveis por realizar a verificação de inconsistencias no preenchimento dos atos de pessoal, podendo emitir alertas ou bloquear o tramite daquele ato até o mesmo ser preenchido corretamente. Durante o estágio foram desenvolvidas diversas criticas, onde o PO do projeto escrevia quais as criticas o sistema deveria possuir, e durante o decorrer da sprint, estas criticas foram desenvolvidas e testas e posteriormente enviadas para a aba 'Teste - não iniciados'. No estágio realizou-se o desenvolvimento de novas criticas e a correção das criticas existentes. 
+
+Realizou-se também a criação de um sistema de relátorios atraves de gráficos e tabelas, sobre as informações armazenadas no e-pessoal. Tais gráficos cosumiram estas informações atraves de consultas SQL, com a ferramenta Oracle, um vídeo disponibilizado pelo TCU exemplifica o sistema e pode ser acessado em \textbf{Criticas}.
+
+A criação destes gráficos demandou bastante tempo durante o estágio, sendo que teve a duração de entre 4 a 5 meses de duração, com aproximadamente 9 Sprints de duração. Sendo que tais gráficos foram validados constantemente ao longo das sprints, e após a conclusão do mesmo, foram realizadas a manutenção com a criação ou alteração dos gráficos na ferramenta.
+
+comp_TCU {
+    https://portal.tcu.gov.br/institucional/conheca-o-tcu/competencias/
+}
+
+relatorio {
+    https://www.youtube.com/watch?v=NpomOiefpTc&t=6581s
+}
